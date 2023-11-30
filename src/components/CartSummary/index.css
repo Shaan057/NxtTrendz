@@ -1,0 +1,45 @@
+.summary-box {
+  max-width: 300px;
+  margin-left: auto;
+  padding-bottom: 10px;
+}
+.order-total {
+  color: grey;
+  font-size: 20px;
+}
+#amount {
+  color: black;
+  font-size: 26px;
+}
+
+.total-cart {
+  margin-top: 5px;
+}
+
+.checkout-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #0068f6;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .order-total {
+    font-size: 15px;
+  }
+  #amount {
+    font-size: 19px;
+  }
+  .total-cart {
+    font-size: 13px;
+  }
+  .checkout-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
