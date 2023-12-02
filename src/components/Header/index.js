@@ -64,19 +64,19 @@ const Header = props => {
           </Link>
           <ul className="nav-menu">
             <li className="nav-menu-item">
-              <Link to="/" className="nav-link">
+              <Link to="/" className="nav-link hover">
                 Home
               </Link>
             </li>
 
             <li className="nav-menu-item">
-              <Link to="/products" className="nav-link">
+              <Link to="/products" className="nav-link hover">
                 Products
               </Link>
             </li>
 
             <li className="nav-menu-item">
-              <Link to="/cart" className="nav-link">
+              <Link to="/cart" className="nav-link hover">
                 Cart
                 {renderCartItemsCount()}
               </Link>

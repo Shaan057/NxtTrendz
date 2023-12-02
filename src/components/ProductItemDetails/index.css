@@ -163,7 +163,10 @@
   width: 16px;
   height: 16px;
 }
-
+.quantity-controller-icon:hover {
+  color: red;
+  scale: 1.1;
+}
 .quantity {
   color: #616e7c;
   font-family: 'Roboto';
@@ -198,6 +201,9 @@
 .add-to-cart-btn {
   font-size: 12px;
   margin-bottom: 32px;
+}
+.add-to-cart-btn:hover {
+  scale: 0.95;
 }
 
 @media screen and (min-width: 768px) {

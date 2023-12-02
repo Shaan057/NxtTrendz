@@ -25,7 +25,6 @@ const CartItem = props => (
       const onIncrementCartItemQuantity = () => {
         incrementCartItemQuantity(id)
       }
-      // TODO: Update the functionality to increment and decrement quantity of the cart item
 
       return (
         <li className="cart-item">

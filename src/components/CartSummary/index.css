@@ -27,6 +27,9 @@
   border-radius: 5px;
   font-size: 18px;
 }
+.checkout-button:hover {
+  scale: 0.95;
+}
 
 @media screen and (max-width: 768px) {
   .order-total {
@@ -42,4 +45,136 @@
     padding: 8px;
     font-size: 14px;
   }
+}
+
+.modal {
+  font-size: 12px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.payments-options {
+  list-style: none;
+  padding: 0px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 425px) {
+  .payments-options {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .payments-options {
+    width: 470px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .payments-options {
+    width: 500px;
+  }
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.payments-label {
+  font-weight: 500;
+  font-size: 15px;
+}
+.buttons-container {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-button {
+  background-color: #0967d2;
+  border: none;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 13px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.confirm-button:hover {
+  scale: 0.95;
+}
+
+.disabled-button {
+  background-color: #2070cb8f;
+}
+.disabled-button:hover {
+  scale: 1;
+}
+
+.icon {
+  margin-left: auto;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  color: brown;
+}
+.payment-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+.tick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: rgb(81, 170, 81);
+  background-color: white;
+  position: relative;
+  top: -23px;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(94, 180, 94);
+  font-size: 30px;
+}
+.order-places-msg {
+  font-size: large;
+  color: green;
+  font-family: 'Bree Serif';
+}
+.pricing-container {
+  display: flex;
+  gap: 20px;
+}
+.total-items {
+  font-family: 'Bree Serif';
+  font-weight: bold;
+  color: green;
+}
+
+.styling {
+  color: #0967d2;
+}
+
+.todays-date {
+  margin-left: auto;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: brown;
+  font-size: 13px;
+}
+
+.summary-style {
+  display: flex;
+  align-items: center;
 }
