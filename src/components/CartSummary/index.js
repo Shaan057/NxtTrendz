@@ -61,7 +61,7 @@ const CartSummary = () => {
                   </div>
                   <h1 className="styling">Select Payments Option</h1>
                   <form className="payments-options">
-                    <div className="input-container">
+                    <div className="cart-input-container">
                       <input
                         id="card"
                         type="checkbox"
@@ -74,7 +74,7 @@ const CartSummary = () => {
                       </label>
                       <SiMastercard className="icon" />
                     </div>
-                    <div className="input-container">
+                    <div className="cart-input-container">
                       <input
                         id="netBanking"
                         type="checkbox"
@@ -87,7 +87,7 @@ const CartSummary = () => {
                       </label>
                       {/* <CiBank className="icon" /> */}
                     </div>
-                    <div className="input-container">
+                    <div className="cart-input-container">
                       <input
                         id="upi"
                         type="checkbox"
@@ -100,7 +100,7 @@ const CartSummary = () => {
                       </label>
                       <SiPaypal className="icon" />
                     </div>
-                    <div className="input-container">
+                    <div className="cart-input-container">
                       <input
                         id="wallet"
                         type="checkbox"
@@ -113,7 +113,7 @@ const CartSummary = () => {
                       </label>
                       {/* <MdWallet className="icon" /> */}
                     </div>
-                    <div className="input-container">
+                    <div className="cart-input-container">
                       <input
                         id="cod"
                         type="checkbox"

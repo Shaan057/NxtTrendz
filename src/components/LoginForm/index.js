@@ -55,7 +55,7 @@ class LoginForm extends Component {
     const {password} = this.state
 
     return (
-      <>
+      <div className="input-container">
         <label className="input-label" htmlFor="password">
           PASSWORD
         </label>
@@ -67,7 +67,7 @@ class LoginForm extends Component {
           onChange={this.onChangePassword}
           placeholder="Password"
         />
-      </>
+      </div>
     )
   }
 
@@ -75,7 +75,7 @@ class LoginForm extends Component {
     const {username} = this.state
 
     return (
-      <>
+      <div className="input-container">
         <label className="input-label" htmlFor="username">
           USERNAME
         </label>
@@ -87,7 +87,7 @@ class LoginForm extends Component {
           onChange={this.onChangeUsername}
           placeholder="Username"
         />
-      </>
+      </div>
     )
   }
 
@@ -117,8 +117,8 @@ class LoginForm extends Component {
             className="login-website-logo-desktop-img"
             alt="website logo"
           />
-          <div className="input-container">{this.renderUsernameField()}</div>
-          <div className="input-container">{this.renderPasswordField()}</div>
+          {this.renderUsernameField()}
+          {this.renderPasswordField()}
           <button type="submit" className="login-button">
             Login
           </button>
