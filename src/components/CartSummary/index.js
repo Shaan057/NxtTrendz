@@ -3,7 +3,11 @@ import Popup from 'reactjs-popup'
 // import {FaCcMastercard} from 'react-icons/fa'
 import {SiMastercard, SiPaypal} from 'react-icons/si'
 // import {MdWallet} from 'react-icons/md'
-
+// import {FaHandHoldingDollar} from 'react-icons'
+import {AiOutlineDollar} from 'react-icons/ai'
+// import {AiOutlineWallet} from 'react-icons/ai'
+import {GiWallet} from 'react-icons/gi'
+import {IoIosDesktop} from 'react-icons/io'
 import CartContext from '../../context/CartContext'
 
 import './index.css'
@@ -85,7 +89,7 @@ const CartSummary = () => {
                       <label className="payments-label" htmlFor="netBanking">
                         Net Banking
                       </label>
-                      {/* <CiBank className="icon" /> */}
+                      <IoIosDesktop className="icon" />
                     </div>
                     <div className="cart-input-container">
                       <input
@@ -111,7 +115,7 @@ const CartSummary = () => {
                       <label className="payments-label" htmlFor="wallet">
                         Wallet
                       </label>
-                      {/* <MdWallet className="icon" /> */}
+                      <GiWallet className="icon" />
                     </div>
                     <div className="cart-input-container">
                       <input
@@ -123,6 +127,7 @@ const CartSummary = () => {
                       <label className="payments-label" htmlFor="cod">
                         Cash on Delivery
                       </label>
+                      <AiOutlineDollar className="icon" />
                     </div>
                   </form>
                   <div className="buttons-container">
