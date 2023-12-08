@@ -178,3 +178,7 @@ Use these files to complete the implementation:
 ### Visit
 
 ### [Link](https://nxtTrndzrjcbp.ccbp.tech)
+
+###### or
+
+### [Link](https://nxttrendzshaan.netlify.app/login)
