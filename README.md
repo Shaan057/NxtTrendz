@@ -40,7 +40,7 @@
 </details>
 
 ### Refer to the video below:
-[Link](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-output.mp4)
+[Video](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-output.mp4)
 
 ### Set Up Instructions
 
