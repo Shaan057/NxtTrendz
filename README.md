@@ -1,14 +1,33 @@
-In this project, let's build a **Nxt Trendz - Cart Features** by applying the concepts we have learned till now.
+# NxtTrendz APP
 
-### Refer to the video below:
+### Introduction
 
-<br/>
-<div style="text-align: center;">
-  <video style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-output.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
+> Keywords: `React`, E-commerce Functionality
+- Developed the frontend part of the Nxt Trendz online shopping application, which is similar to Amazon.
+- This application allows users to log in, search, sort, filter, select products, and add them to the shopping cartconcepts such as authentication, state management, context, page navigation, media queries and flexbox concepts in the code by following the clean code guidelines.
+
+### Technical Aspects
+> Keywords: `Authentication`, `Validation`, `Cookies` 
+- Implemented a basic authentication flow and handled common errors such as invalid username and invalid password.
+- Used cookies to persist user credentials across page reloads.
+
+### State Management and Navigation:
+> Keywords: `State management`, `Navigation`, `Protected Route` Used
+ - Context for state management for creating a global state to manage cart state across routes.Used React Router for navigation within the application. 
+ - Additionally, implemented protected routes to control access based on user roles.`
+
+### API Integration: 
+> Keywords: API Integration 
+- Integrated mock APIs for displaying data
+
+### Clean Code Guidelines:
+> Keywords: `Clean code guidelines`
+- Followed clean code guidelines by maintaining a consistent folder structure and used meaningful naming conventions, such as `prefixing` event handlers with `on` and creating `reusable` components throughout the application.
+
+### Responsiveness:
+> Keywords: `Responsiveness`, 
+- `Flexbox` To ensure a responsive design, used `media queries` and `flexbox` for layouting.
+
 
 ### Design Files
 
@@ -20,6 +39,16 @@ In this project, let's build a **Nxt Trendz - Cart Features** by applying the co
 
 </details>
 
+### Refer to the video below:
+
+<br/>
+<div style="text-align: center;">
+  <video style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
+    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-output.mp4" type="video/mp4">
+  </video>
+</div>
+<br/>
+
 ### Set Up Instructions
 
 <details>
@@ -29,50 +58,36 @@ In this project, let's build a **Nxt Trendz - Cart Features** by applying the co
 - Start up the app using `npm start`
 </details>
 
-### Completion Instructions
+### Functionalities
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+- When an unauthenticated user tries to access the **Cart** Route, then the page navigates to **Login** Route
 
-The app must have the following functionalities
-
-- When an unauthenticated user tries to access the **Cart** Route, then the page should be navigated to **Login** Route
-
-- Following are the features to be implemented
+- Following are the features implemented
 
   - Feature 1
 
     - When an authenticated user tries to add the same product multiple times
-      - The quantity of the product should be updated accordingly, and the count of the cart items in the header should be remained same
+      - The quantity of the product updates accordingly, and the count of the cart items in the header remaines same.
 
   - Feature 2
 
-    - The total amount and number of items in the cart should be displayed in the **Cart** Route
+    - The total amount and number of items in the cart are displayed in the **Cart** Route
 
   - Feature 3
 
     - In each cart item in the cart
-      - When the plus icon is clicked, then the quantity of the product should be incremented by one
-      - When the minus icon is clicked, then the quantity of the product should be decremented by one
-      - When the quantity of the product is one and the minus icon is clicked, then the respective product should be removed from the cart
-      - Based on the quantity of the product, the product price and the Cart Summary, i.e the total cost should be updated accordingly
+      - When the plus icon is clicked, then the quantity of the product is incremented by one
+      - When the minus icon is clicked, then the quantity of the product is decremented by one
+      - When the quantity of the product is one and the minus icon is clicked, then the respective product is removed from the cart
+      - Based on the quantity of the product, the product price and the Cart Summary, i.e the total cost is updated accordingly
 
   - Feature 4
 
-    - When an authenticated user clicks on the remove button, cart item should be removed from the cart list
+    - When an authenticated user clicks on the remove button, cart item is removed from the cart list
 
   - Feature 5
 
-    - When an authenticated user clicks on the **Remove All** button, all the cart items should be removed from the cart and [Empty Cart View](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-empty-cart-view.png) should be displayed
-
-- The `CartContext` has an object as a value with the following properties
-  - `cartList` - this key stores the cart items
-  - `removeAllCartItems` - this method is used to remove all the cart items in the `cartList`
-  - `addCartItem` - this method adds the cart item to the `cartList`
-  - `removeCartItem` - this method removes the cart item from the `cartList`
-  - `incrementCartItemQuantity` - this method increases the quantity of a product in the `cartList`
-  - `decrementCartItemQuantity` - this method decreases the quantity of a product in the `cartList`
+    - When an authenticated user clicks on the **Remove All** button, all the cart items are removed from the cart and [Empty Cart View](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-empty-cart-view.png) is displayed
 
 </details>
 
@@ -87,72 +102,6 @@ The app must have the following functionalities
 
 </details>
 
-<details>
-<summary>Implementation Files</summary>
-<br/>
-
-Use these files to complete the implementation:
-
-- `src/App.js`
-- `src/components/Cart/index.js`
-- `src/components/Cart/index.css`
-- `src/components/CartItem/index.js`
-- `src/components/CartItem/index.css`
-- `src/components/CartSummary/index.js`
-- `src/components/CartSummary/index.css`
-</details>
-
-### Quick Tips
-
-<details>
-<summary>Click to view</summary>
-<br>
-
-- The `line-height` CSS property sets the height of a line box. It's commonly used to set the distance between lines of text
-
-  ```
-  line-height: 1.5;
-  ```
-
-    <br/>
-    <img src="https://assets.ccbp.in/frontend/react-js/line-height-img.png" alt="line height" style="width:90%; max-width: 600px;"/>
-
-- The array method `find()` returns the first item's value that satisfies the provided testing function. If no item is found, it returns `undefined`
-
-  **Syntax**: `arr.find(Testing Function)`
-
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- `BsPlusSquare`, `BsDashSquare` icons from `react-icons` should be used for **plus** and **minus** buttons in cart item
-- The Cart Item should consist of two HTML button elements with data-testid attribute values as **plus** and **minus** respectively
-- `AiFillCloseCircle` icon from react-icons should be used for **remove** button in cartItem
-- The Cart Item should consist of an HTML button element with data-testid attribute values as **remove**
-- The product image in **Cart Item** Route should have the alt as `title` of the product
-
-- Prime User credentials
-
-  ```text
-   username: rahul
-   password: rahul@2021
-  ```
-
-- Non-Prime User credentials
-
-  ```text
-   username: raja
-   password: raja@2021
-  ```
-
-</details>
 
 ### Resources
 
@@ -168,14 +117,14 @@ Use these files to complete the implementation:
 
 </details>
 
-<details>
-<summary>Font-families</summary>
 
-- Roboto
+### Future Improvements
+Keywords: `Backend` 
+> Planned to develop a backend using `Node.js` and `Express.js` to replace the mock API implementation. 
+- This will also allow me to have more control over the data and offer more features like user profiles and product recommendations.
 
-</details>
 
-### Visit
+### Demo
 
 ### [Link](https://nxtTrndzrjcbp.ccbp.tech)
 
