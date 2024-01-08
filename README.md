@@ -1,10 +1,10 @@
 # NxtTrendz APP
 
 ### Introduction
-
 > Keywords: `React`, E-commerce Functionality
 - Developed the frontend part of the Nxt Trendz online shopping application, which is similar to Amazon.
-- This application allows users to log in, search, sort, filter, select products, and add them to the shopping cartconcepts such as authentication, state management, context, page navigation, media queries and flexbox concepts in the code by following the clean code guidelines.
+- This application allows users to log in, search, sort, filter, select products, and add them to the shopping cart
+- Concepts such as authentication, state management, context, page navigation, media queries and flexbox concepts in the code by following the clean code guidelines.
 
 ### Technical Aspects
 > Keywords: `Authentication`, `Validation`, `Cookies` 
