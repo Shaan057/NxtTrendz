@@ -81,7 +81,9 @@
   - Feature 5
 
     - When an authenticated user clicks on the **Remove All** button, all the cart items are removed from the cart and [Empty Cart View](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-empty-cart-view.png) is displayed
-
+  
+  - Feature 6
+    - When the user clicks on checkout button the payment popup opens and lets the user to input payment details/methods and ables to place order successfully.
 </details>
 
 <details>
